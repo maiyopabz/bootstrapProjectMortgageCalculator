@@ -5,9 +5,12 @@
 }
 
 body {
-
+    
     font-family: sans-serif;
     background-color: var(--darkBlue-color);
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 
 }
 
@@ -15,46 +18,52 @@ body {
 :root {
 
     /* font-size */
-    --small: 12px;
-    --normal: 15px;
+    --xxsmall: 15px;
+    --xsmall: 20px;
+    --small: 25px;
+    --normal: 35px;
     --large: 45px;
+
+    
 
 
     /* typography colors  */
     --white-color: hsl(0, 0%, 100%);
+    --liteGrey-color: rgb(180, 183, 187);
     --darkBlue-color: rgb(35, 45, 62);
     --limeGreen-color: rgb(78, 177, 109);
-    --liteGrey-color: hsl(0, 0, 83);
-    --softPink-color: hsl(333, 80%, 67%, 0.692);
+    
+    
 
 }
 
-#downpayment {
-    text-align: right;
-}
 
 
 
-#paymentButton {
-    width: 30%;
-    border-radius: 100;
-    margin-top: 30px;
-    background: var(--limeGreen-color);
 
-
-
-}
+/*header sections */
 
 .formContainer {
     margin-top: 120px;
+    
 }
+
+
 
 .formTitle {
     color: var(--white-color);
+    padding-top: 20px;
+    font-size: var(--normal);
+    font-weight: 600;
+
+}
+.formTitle__1 {
+    color: var(--white-color);
     padding: 10px;
     padding-top: 10px;
-    font-size: var(--large);
-    font-weight: 600;
+    text-align: left;
+    font-size: var(--xxsmall);
+   
 
 }
 
@@ -66,25 +75,124 @@ body {
 
 .title {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: end;
     margin: 10px;
 }
 
-.title h3 {
-    font-size: var(--large);
 
-}
 
 .logo {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 70px;
+ 
+    border-radius: 100px;
 }
 
-input[type="text"]::placeholder {
-    text-align: end;
-}
 
-input[type="submit"]::placeholder {
+.ptag {
+    color: var(--liteGrey-color);
+    margin: 100px;
     text-align: center;
 }
+
+/*input ids */
+
+#price {
+    
+    height: 80px;
+    font-size: var(--normal);
+ }
+ 
+ #interest {
+    text-align: right;
+     height: 80px;
+     font-size: var(--normal);
+ }
+ 
+ #taxes {
+     height: 80px;
+     font-size: var(--normal);
+ }
+ 
+ #downpayment {
+     text-align: right;
+     height: 80px;
+     font-size: var(--normal);
+     
+ }
+
+ #monthlypayment {
+     
+    height: 80px;
+    font-size: var(--normal);
+    background: var(--limeGreen-color);
+    border-radius: 0;
+    font-weight: 600;
+    
+}
+
+/* placeholder Pseudo elements */ 
+
+input[type="number"].monthly::placeholder {
+    text-align: left;
+    font-size: 60px;
+    color: var(--white-color);
+    
+
+}
+
+input[type="number"].rate::placeholder {
+    text-align: right;
+    font-size: 60px;
+    
+    
+
+}
+
+
+
+input[type="number"]::placeholder {
+    text-align: start;
+    font-size: 50px;
+}
+
+
+
+/* submit button*/
+
+#paymentButton {
+ 
+    border-radius: 100;
+    margin-top: 30px;
+    background: var(--limeGreen-color);
+    height: 90px;
+    font-weight: 600;
+    
+    
+
+
+}
+
+
+
+
+
+/*media queries */
+
+/* @media (max-width: 1200px) {
+  
+}
+
+@media (max-width: 992px) {
+   
+} */
+
+/* @media (max-width: 768px) {
+    .formTitle{font-size: var(--small);}
+} */
+
+/* @media (max-width: 576px) {
+    .formTitle{font-size: var(--xsmall);}
+  
+} */
