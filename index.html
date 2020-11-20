@@ -15,96 +15,107 @@
 
 <body>
 
-  <!-- start -->
-  <div class="container col-10">
-    <div class="row  justify-content-start">
 
 
-        <form class=" col-md-6 formContainer">
-          <div class="title">
-            <img class="logo" src="assets/img/bag.png" alt="calculator">
+  <!-- row start-->
 
-            <h3 class="formTitle">MORTGAGE CALCULATOR</h3>
+  <div class="row">
+
+  <!--FORM ONE -->  
+    <form id="form" class="col-lg-6 formContainer ml-5 pl-5">
+      <div class="title justitfy-content-center">
+        <img class="logo" src="assets/img/bag.png" alt="cashbag">
+        <h3 class="formTitle ">MORTGAGE CALCULATOR</h3>
+      </div>
+<!--first colmn-->
+      <div class="form-row">
+        <div class="col-lg-6 px-3">
+          <a><strong class="formTitle__1 ">MORTGAGE PRICE</strong></a>
+          <input id="price" type="number" class="  form-control" placeholder="$">
+        </div>
+
+        <div class="col-lg-6 px-3">
+          <div><strong class="formTitle__1">INTEREST RATE</strong></a></div>
+          <input id="interest" type="number" class=" mb-5  form-control rate" placeholder="%">
+        </div>
+      </div>
+<!--second colmn-->
+      <div class="form-row">
+        <div class="col-lg-6 px-3">
+          <a><strong class="formTitle__1">TAXES</strong></a>
+          <input id="taxes" type="number" class="form-control" placeholder="$">
+        </div>
+        <div class="col-lg-6 px-3">
+          <a><strong class="formTitle__2 ">DOWN PAYMENT</strong></a>
+          <input id="downpayment" type="number" class="form-control rate" placeholder="%">
+        </div>
+      </div>
+<!--btn-->
+      <div class="col text-center">
+        <button id="paymentButton" type="submit" class="btn btn-success col-lg-6 mt-5  ">MY PAYMENT</button>
+      </div>
+      <p class="ptag mt-4 ">All Scenario based on 720 Credit Score | Not everyone will qualify</p>
+    </form>
+
+    <!------------------------ OUTPUT FORM ------------------------------------->
+
+    <form id="form__2" class="col-lg ml-5 pl-5 formContainer ">
+
+      <div class="container formTitle__2">
+
+        <a>
+          <strong">MONTHLY PAYMENT</strong>
+        </a>
+        <input id="monthlypayment" type="number" class="form-control monthly" placeholder="$2,300">
+
+      </div>
+
+      <br>
+
+      <!--Breakdowns  -->
+      <strong class="formTitle__2">BREAKDOWN</strong>
+
+
+        <div class="row form-col">
+
+          <div class="col-md-5">
+            <p class="formTitle__3 zero">PRINCIPAL AND INTEREST</p>
           </div>
-          <!-- box grid gap-->
-          <div class="form-row">
-            <div class="col-md-6 ">
-              <a><strong class="formTitle__1">MORTGAGE PRICE</strong></a>
-              <input id="price" type="number" class="form-control" placeholder="$">
-            </div>
 
-            <div class="col-md-6">
-              <a><strong class="formTitle__1">INTEREST RATE</strong></a>
-              <input id="interest" type="number" class="form-control rate" placeholder="%">
-            </div>
-            
-
+          <div class="col-md-7">
+            <p class="break__down one"> $1,800.00</p>
           </div>
 
-          <div class="form-row">
-            <div class="col-md-6">
-              <a><strong class="formTitle__1">TAXES</strong></a>
-              <input id="taxes" type="number" class="form-control" placeholder="$">
-            </div>
-            <div class="col">
-              <a><strong class="formTitle__2 ">DOWN PAYMENT</strong></a>
-              <input id="downpayment" type="number" class="form-control rate" placeholder="%">
-            </div>
+          <div class="col-md-5">
+            <p class="formTitle__3 ">TAXES</p>
           </div>
-          <div class="col text-center">
-            <button id="paymentButton" type="submit" class="btn btn-success col-lg-6 ">MY PAYMENT</button>
+
+          <div class="col-md-7">
+            <p class="break__down two" >$220.00</p>
           </div>
-            <p class="ptag">All Scenario based on 720 Credit Score | Not everyone will qualify</p>
-        </form>
+          <div class="col-md-5">
+            <p class="formTitle__3">INSURANCE</p>
+          </div>
 
-        <!------------------------ Second form------------------------------------->
+          <div class="col-md-7">
+            <p class="break__down three">$80.00</p>
+          </div>
+          <div class="col-md-5">
+            <p class="formTitle__3">PMI</>
+          </div>
 
-<form class="col-md-6 formContainer">
+          <div class="col-md-7">
+            <p class="break__down four" >$200.00</p>
+          </div>
 
-  <div class="title">
-    <div class="col">
-      <a><strong class="formTitle__2 ">MONTHLY PAYMENT</strong></a>
-      <input id="monthlypayment" type="number" class="form-control monthly" placeholder="$2,300">
-    </div>
+        </div>
+
+    </form>
+
+  <!--output form ends-->
+
+
   </div>
-
-  <!--form colums -->
-
-  <div class="form-col">
-    <P><strong class="formTitle__2">BREAKDOWN</strong></P>
-  
-    <div class="col">
-      <a><strong class="formTitle__2">PRINCIPAL AND INTEREST</strong></a>
-      <input id="price" type="number" class="form-control" placeholder="$1800.00">
-    </div>
-
-    <div class="col">
-      <a><strong class="formTitle__1">TAXES</strong></a>
-      <input id="taxes" type="number" class="form-control" placeholder="$220.00">
-    </div>
-    <div class="col">
-      <a><strong class="formTitle__2 ">INSURANCE</strong></a>
-      <input id="downpayment" type="text" class="form-control" placeholder="$80.00">
-    </div>
-
-    <div class="col">
-      <a><strong class="formTitle__2 ">PMI</strong></a>
-      <input id="downpayment" type="text" class="form-control" placeholder="%">
-    </div>
-  </div>
-    
-</form>
-
-    </div>
-  </div>
-
-
-
-
-
-
-
-
 
 
 

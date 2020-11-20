@@ -5,7 +5,7 @@
 }
 
 body {
-    
+
     font-family: sans-serif;
     background-color: var(--darkBlue-color);
     max-width: 100%;
@@ -23,8 +23,10 @@ body {
     --small: 25px;
     --normal: 35px;
     --large: 45px;
+    --xlarge: 52px;
 
-    
+
+
 
 
     /* typography colors  */
@@ -32,10 +34,118 @@ body {
     --liteGrey-color: rgb(180, 183, 187);
     --darkBlue-color: rgb(35, 45, 62);
     --limeGreen-color: rgb(78, 177, 109);
-    
-    
+
+
 
 }
+
+/*input ids */
+
+#price {
+
+    height: 80px;
+    font-size: var(--normal);
+}
+
+#interest {
+    text-align: right;
+    height: 80px;
+    font-size: var(--normal);
+}
+
+#taxes {
+    height: 80px;
+    font-size: var(--normal);
+
+}
+
+#downpayment {
+    text-align: right;
+    height: 80px;
+    font-size: var(--normal);
+
+}
+
+#monthlypayment {
+
+    height: 100px;
+    font-size: var(--xlarge);
+    background: var(--limeGreen-color);
+    border-radius: 0;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+}
+
+/* submit button*/
+
+#paymentButton {
+
+    border-radius: 100;
+    margin-top: 30px;
+    background: var(--limeGreen-color);
+    height: 90px;
+    font-weight: 600;
+
+
+
+
+}
+
+
+
+
+/*breakdowns ids */
+
+#principal {
+    text-align: left;
+    height: 50px;
+    font-size: var(--xsmall);
+
+
+}
+
+#taxes_2 {
+    text-align: left;
+    height: 50px;
+    font-size: var(--xsmall);
+
+
+}
+
+#insurance {
+    text-align: left;
+    height: 50px;
+    font-size: var(--xsmall);
+
+}
+
+#pmi {
+    text-align: left;
+    height: 50px;
+    font-size: var(--xsmall);
+
+}
+
+
+.one {
+    padding-left: 5px;
+}
+
+.two {
+    padding-left: 35px;
+}
+
+.three {
+    padding-left: 40px;
+}
+
+.four {
+    padding-left: 20px;
+}
+
 
 
 
@@ -43,27 +153,53 @@ body {
 
 /*header sections */
 
-.formContainer {
-    margin-top: 120px;
-    
+
+
+#form__2 .formTitle__3 {
+
+    padding-left: 10px;
+    font-weight: 200;
 }
+
+#form__2 p {
+    color: var(--white-color);
+    justify-content: center;
+    align-content: center;
+    padding-top: 20px;
+    font-weight: 600;
+    margin: 0;
+
+}
+
+
+
+
+.formContainer {
+    margin-top: 210px;
+
+}
+
+
 
 
 
 .formTitle {
+    position: static;
     color: var(--white-color);
     padding-top: 20px;
-    font-size: var(--normal);
+    font-size: var(--xlarge);
     font-weight: 600;
 
 }
+
 .formTitle__1 {
+    position: static;
     color: var(--white-color);
     padding: 10px;
     padding-top: 10px;
     text-align: left;
     font-size: var(--xxsmall);
-   
+
 
 }
 
@@ -73,6 +209,10 @@ body {
     padding-top: 10px;
 }
 
+
+
+
+
 .title {
     display: flex;
     align-items: end;
@@ -80,12 +220,18 @@ body {
     margin: 10px;
 }
 
+.title h3 {
+    display: inline;
+    padding-left: 20px;
+    font-size: var(--large);
+}
+
 
 
 .logo {
     width: 60px;
     height: 70px;
- 
+
     border-radius: 100px;
 }
 
@@ -96,83 +242,48 @@ body {
     text-align: center;
 }
 
-/*input ids */
 
-#price {
-    
-    height: 80px;
-    font-size: var(--normal);
- }
- 
- #interest {
-    text-align: right;
-     height: 80px;
-     font-size: var(--normal);
- }
- 
- #taxes {
-     height: 80px;
-     font-size: var(--normal);
- }
- 
- #downpayment {
-     text-align: right;
-     height: 80px;
-     font-size: var(--normal);
-     
- }
 
- #monthlypayment {
-     
-    height: 80px;
-    font-size: var(--normal);
-    background: var(--limeGreen-color);
-    border-radius: 0;
-    font-weight: 600;
-    
-}
 
-/* placeholder Pseudo elements */ 
+
+
+
+
+/* placeholder Pseudo elements */
 
 input[type="number"].monthly::placeholder {
     text-align: left;
     font-size: 60px;
     color: var(--white-color);
-    
+
+
 
 }
 
 input[type="number"].rate::placeholder {
     text-align: right;
     font-size: 60px;
-    
-    
+
+
 
 }
 
+input[type="number"].break__down::placeholder {
+    text-align: left;
+    font-size: var(--xsmall);
+    color: var(--liteGrey-color);
+
+}
 
 
 input[type="number"]::placeholder {
     text-align: start;
     font-size: 50px;
-}
-
-
-
-/* submit button*/
-
-#paymentButton {
- 
-    border-radius: 100;
-    margin-top: 30px;
-    background: var(--limeGreen-color);
-    height: 90px;
-    font-weight: 600;
-    
-    
-
 
 }
+
+
+
 
 
 
@@ -180,19 +291,131 @@ input[type="number"]::placeholder {
 
 /*media queries */
 
-/* @media (max-width: 1200px) {
-  
+@media (max-width: 2200px) {
+    #form__2 {
+        margin-top: 210px;
+
+    }
+
+    #form__2 a {
+
+        text-align: start;
+        font-size: var(--small);
+
+
+    }
+
+    input[type="number"].rate::placeholder {
+        text-align: start;
+        font-size: 60px;
+
+    }
+
+    .formTitle {
+        font-size: var(--small);
+    }
+
+    .title h3 {
+        
+        font-size: var(--normal);
+    }
+
 }
 
 @media (max-width: 992px) {
-   
-} */
 
-/* @media (max-width: 768px) {
-    .formTitle{font-size: var(--small);}
-} */
+    .formContainer {
 
-/* @media (max-width: 576px) {
-    .formTitle{font-size: var(--xsmall);}
-  
-} */
+        margin-top: 100px;
+        max-width: 490px;
+
+    }
+
+    #form__1 {
+
+        margin: 100px;
+    }
+
+    #form__2 a {
+        font-size: var(--normal);
+
+
+    }
+
+    .title h3 {
+        
+        font-size: var(--small);
+    }
+
+    .formTitle__2 {
+        font-size: var(--small);
+
+
+    }
+
+    .zero {
+        white-space: nowrap;
+        font-size: var(--xxsmall);
+    }
+
+    .one {
+        justify-content: end;
+        text-align: end;
+        padding-left: 200px;
+    }
+
+    .two {
+        padding-left: 200px;
+    }
+
+    .three {
+        padding-left: 200px;
+    }
+
+    .four {
+        padding-left: 200px;
+    }
+
+
+
+
+    .row {
+        margin-top: 0;
+        margin-right: 100px;
+
+    }
+
+
+
+    #form__2 {
+        margin-top: 0;
+
+
+
+    }
+
+
+
+
+
+    input[type="number"].rate::placeholder {
+        text-align: start;
+        font-size: 60px;
+
+
+    }
+
+    input[type="number"].monthly::placeholder {
+        margin-top: 0;
+        padding-top: 0px;
+        text-align: center;
+        font-size: 60px;
+        color: var(--white-color);
+
+
+
+    }
+
+
+}
+
