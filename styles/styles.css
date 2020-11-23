@@ -207,6 +207,7 @@ body {
     color: var(--white-color);
     padding: 10px;
     padding-top: 10px;
+    
 }
 
 
@@ -342,6 +343,8 @@ input[type="number"]::placeholder {
 
     }
 
+   
+
     .title h3 {
         
         font-size: var(--small);
@@ -394,6 +397,17 @@ input[type="number"]::placeholder {
 
     }
 
+    #form .ptag {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        
+        color: var(--liteGrey-color);
+        font-size: var(--xsmall);
+    }
+    
+    
+
 
 
 
@@ -419,3 +433,14 @@ input[type="number"]::placeholder {
 
 }
 
+
+@media (max-width: 660px) {
+    #form .ptag {
+        white-space: nowrap;
+        justify-content: center;
+        
+        color: var(--liteGrey-color);
+        font-size: 12px;
+    }
+   
+}

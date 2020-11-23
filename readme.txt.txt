@@ -11,7 +11,7 @@ setup
 1. The project is base on index.html
 2. The project also follows styles.css methodology. 
 3. The UI is built using Bootstrap.
-4. The product site is hosted on github. check it out => 
+4. The product site is hosted on github. check it out => https://maiyopabz.github.io/bootstrapProjectMortgageCalculator/.
 
 
 
